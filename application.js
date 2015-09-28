@@ -25,7 +25,7 @@ app.use(express.static(__dirname + '/public'));
 app.use(mbaasExpress.fhmiddleware());
 
 
-app.use('/', require('./lib/hello.js')());
+app.use('/', require('./lib/saml.js')());
 // fhlint-end
 
 // Important that this is last!

@@ -2,24 +2,25 @@
 
 This is a blank 'hello world' FeedHenry MBaaS. Use it as a starting point for building your APIs. 
 
-# Group Hello World API
+# Group SAML API
 
-# hello [/hello]
+# login [/saml/login]
 
-'Hello world' endpoint.
+SAML Login endpoint.
 
-## hello [POST] 
+## login [POST] 
 
-'Hello world' endpoint.
+Login endpoint.
 
 + Request (application/json)
     + Body
             {
-              "hello": "world"
+              "username" : "RHMobilityPoc1",
+              "password" : "Password.123"
             }
 
 + Response 200 (application/json)
     + Body
             {
-              "msg": "Hello world"
+              "data": "saml assertion goes here"
             }
